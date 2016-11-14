@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351ADA1C1DDA7BC80093A3D5 /* ZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351ADA1B1DDA7BC80093A3D5 /* ZoomViewController.m */; };
 		35CC2D191DCC0A1E001E9FF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC2D181DCC0A1E001E9FF9 /* main.m */; };
 		35CC2D1C1DCC0A1E001E9FF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC2D1B1DCC0A1E001E9FF9 /* AppDelegate.m */; };
 		35CC2D1F1DCC0A1E001E9FF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC2D1E1DCC0A1E001E9FF9 /* ViewController.m */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		351ADA1A1DDA7BC80093A3D5 /* ZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomViewController.h; sourceTree = "<group>"; };
+		351ADA1B1DDA7BC80093A3D5 /* ZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomViewController.m; sourceTree = "<group>"; };
 		35CC2D141DCC0A1E001E9FF9 /* LHLObjCDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHLObjCDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CC2D181DCC0A1E001E9FF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35CC2D1A1DCC0A1E001E9FF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		351ADA191DDA7BAD0093A3D5 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				351ADA1A1DDA7BC80093A3D5 /* ZoomViewController.h */,
+				351ADA1B1DDA7BC80093A3D5 /* ZoomViewController.m */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
 		35CC2D0B1DCC0A1E001E9FF9 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +147,7 @@
 		35CC2D161DCC0A1E001E9FF9 /* LHLObjCDemos */ = {
 			isa = PBXGroup;
 			children = (
+				351ADA191DDA7BAD0093A3D5 /* ScrollView */,
 				35E800B91DD0EB5B00C9396C /* AutoLayout */,
 				35CC2D201DCC0A1E001E9FF9 /* Main.storyboard */,
 				35CC2D1A1DCC0A1E001E9FF9 /* AppDelegate.h */,
@@ -373,6 +386,7 @@
 				35CC2D571DCC0DE6001E9FF9 /* UIColor+Extension.swift in Sources */,
 				35CC2D561DCC0DE6001E9FF9 /* UIButton+Extension.swift in Sources */,
 				35CC2D191DCC0A1E001E9FF9 /* main.m in Sources */,
+				351ADA1C1DDA7BC80093A3D5 /* ZoomViewController.m in Sources */,
 				35E800BC1DD0EB6D00C9396C /* LPAViewController.m in Sources */,
 				35E800B41DCCCF5000C9396C /* UIView+Additions.m in Sources */,
 			);

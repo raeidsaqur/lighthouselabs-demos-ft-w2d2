@@ -21,11 +21,16 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+    
     [super viewDidLoad];
     
+    //1. Create the subview, in this case square button
     UIButton *squareButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [squareButton setTitle:@"Square" forState:UIControlStateNormal];
     [squareButton addTarget:self action:@selector(resizeFramingView:) forControlEvents:UIControlEventTouchUpInside];
+    
+    //add to the parent view
     [self.view addSubview:squareButton];
     
     //Very important: If you want to use Auto Layout to dynamically calculate the size and position of your view,
@@ -37,6 +42,7 @@
     UIButton *portraitButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [portraitButton setTitle:@"Portrait" forState:UIControlStateNormal];
     [portraitButton addTarget:self action:@selector(resizeFramingView:) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.view addSubview:portraitButton];
     
     portraitButton.translatesAutoresizingMaskIntoConstraints = NO;
@@ -45,6 +51,7 @@
     UIButton *landscapeButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [landscapeButton setTitle:@"Landscape" forState:UIControlStateNormal];
     [landscapeButton addTarget:self action:@selector(resizeFramingView:) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.view addSubview:landscapeButton];
     
     landscapeButton.translatesAutoresizingMaskIntoConstraints = NO;
@@ -132,11 +139,16 @@
         newHeight = 300.0;
     }
     
+
+    //Block syntax.
     [UIView animateWithDuration:2.0 animations:^(){
         self.framingViewHeight.constant = newHeight;
         self.framingViewWidth.constant = newWidth;
+        
+        self.framingView.backgroundColor = [UIColor redColor];
         [self.view layoutIfNeeded];
     }];
+    
 }
 
 @end
